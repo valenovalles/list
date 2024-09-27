@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js",
-    "deploy": "cd ./web && npm run build && cd .. && rm -rf ./src/public-react && mv ./web/dist ./src/public-react"
+    "deploy": "cd ./Front && npm run build && cd .. && rm -rf ./src/public-react && mv ./Front/dist ./src/public-react"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +16,8 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "mysql2": "^3.10.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
